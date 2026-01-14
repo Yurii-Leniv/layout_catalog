@@ -1,18 +1,11 @@
 $font-main: 'Roboto', sans-serif;
 
-p {
-  margin: 0;
-}
-
-body {
-  margin: 0;
-}
 
 .card {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: $card-width;
   height: 408px;
   align-items: center;
   border: 1px solid #f3f3f3;
@@ -35,7 +28,7 @@ body {
   line-height: 18px;
   width: 166px;
   margin-bottom: 0;
-  transition: name 300ms;
+  transition: color 300ms;
 }
 
 .card__code {
@@ -47,7 +40,7 @@ body {
   margin-top: 4px;
   line-height: 14px;
   width: 98px;
-  color: #616070;
+  color: $grey;
 }
 
 .card__review {
@@ -101,7 +94,7 @@ body {
   font-family: $font-main;
   font-weight: 400;
   font-size: 12px;
-  color: #616070;
+  color: $grey;
 }
 
 .card__price-value {
@@ -116,7 +109,7 @@ body {
   width: 166px;
   height: 40px;
   margin-top: 16px;
-  background-color: #00acdc;
+  background-color: $light-blue;
   border-radius: 5px;
   border: none;
   justify-content: center;
@@ -124,7 +117,7 @@ body {
   font-family: $font-main;
   font-weight: 700;
   font-size: 14px;
-  color: #fff;
+  color: $white;
   transition:
     background-color 300ms,
     color 300ms,
@@ -132,14 +125,14 @@ body {
 }
 
 .card__buy:hover {
-  background-color: #fff;
-  border: 1px solid #00acdc;
-  color: #00acdc;
+  background-color: $white;
+  border: 1px solid $light-blue;
+  color: $light-blue;
 }
 
 .card:hover {
   transform: scale(1.2);
   &__name {
-    color: #34568b;
+    color: $blue;
   }
 }

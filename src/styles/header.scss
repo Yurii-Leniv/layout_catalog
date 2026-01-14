@@ -1,14 +1,8 @@
-body {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  margin: 0;
-}
 
 :root {
   --blue: #00acdc;
   --header-height: 60px;
+  --black: #060b35;
 }
 
 .header {
@@ -36,11 +30,11 @@ body {
 .nav__link {
   line-height: var(--header-height);
   display: block;
-  color: #060b35;
+  color: var(--black);
   text-decoration: none;
   margin-right: 20px;
   position: relative;
-  transition: color 300ms;
+  transition: color 300ms   ;
 }
 
 .nav__link:hover {
