@@ -1,7 +1,8 @@
-@import './styles/variables.scss';
+@import './styles/variables';
+@import './styles/reset';
+@import './styles/base';
 @import './styles/body';
 @import './styles/catalog';
 @import './styles/header';
-@import './styles/reset';
-@import './styles/base';
+
 
